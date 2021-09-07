@@ -1,0 +1,42 @@
+@import "../../assets/scss/colors.scss";
+
+.button__container{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    align-items: center;
+    border: none;
+    width: 6.4rem;
+    padding:  .8rem;
+}
+
+.icon__container{
+    min-width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.icon__svg{
+    fill: $secondary;
+    stroke: black;
+    width: 100%;
+    height: auto;
+    max-height: 5.2rem;
+}
+
+.button__container:focus{
+    background-color: $secondary;
+    .icon__svg{
+        fill: $primary;
+    }
+}
+
+.icon__title{
+    margin: 0;
+    font-weight: 500;
+    font-family: system-ui;
+    // font-family: monospace;
+    color: black;
+}

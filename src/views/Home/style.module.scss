@@ -1,0 +1,19 @@
+@import "../../assets/scss/colors.scss";
+
+.home {
+    background-color: $primary;
+}
+.home__container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding:0 2.3rem;
+    height: 100vh;
+    background-color: $primary;
+}
+
+.double__icon__row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
