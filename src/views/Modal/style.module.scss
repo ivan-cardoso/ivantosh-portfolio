@@ -1,0 +1,17 @@
+.modal__section{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.425);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__container{
+    background-color: aliceblue;
+    width: 70%;
+    height: 70%;
+}

@@ -1,10 +1,15 @@
 import React from 'react'
 import s from "./style.module.scss"
+import useModal from "../../hooks/useModal"
 
-const IconHome = ({ title, Icon, handleShow}) => {
+const IconHome = ({ title, Icon, handleShowMobile, handleShowDesktop}) => {
 
     return (
-        <button className={s.button__container} onDoubleClick={()=>handleShow()} >
+        <button className={s.button__container} 
+            onDoubleClick={()=>handleShowDesktop(title)} 
+            onClick={()=>handleShowMobile(title)}
+            onKeyDown={(e)=> handleShowDesktop(e)}
+        >
             <div className={s.icon__container}>
                 <Icon className={s.icon__svg} />
             </div>
