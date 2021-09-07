@@ -2,6 +2,7 @@ import React from 'react'
 import s from "./style.module.scss"
 import useModal from "../../hooks/useModal"
 import {ReactComponent as  Xicon} from "../../utils/x.svg"
+import ModalBody from './ModalBody/ModalBody'
 
 const Modal = ({handleClose, modalTitle}) => {
 
@@ -20,7 +21,7 @@ const Modal = ({handleClose, modalTitle}) => {
                     <h4 className={s.modal__header__title} >{modalTitle}</h4>
                 </div>
                 <div className={s.modal__body}>
-                    This is a Modal Body
+                    <ModalBody section={modalTitle} />
                 </div>
             </div>
         </div>
