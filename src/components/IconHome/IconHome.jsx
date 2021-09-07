@@ -6,9 +6,9 @@ const IconHome = ({ title, Icon, handleShowMobile, handleShowDesktop}) => {
 
     return (
         <button className={s.button__container} 
-            onDoubleClick={()=>handleShowDesktop(title)} 
+            onDoubleClick={()=>handleShowDesktop()} 
             onClick={()=>handleShowMobile(title)}
-            onKeyDown={(e)=> handleShowDesktop(e)}
+            onKeyDown={(e)=> e.key === "Enter" && handleShowDesktop()}
         >
             <div className={s.icon__container}>
                 <Icon className={s.icon__svg} />

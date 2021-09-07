@@ -15,11 +15,8 @@ const useModal = () =>{
         setModalTitle(title)
     }
 
-    const handleShowDesktop = (title) => {
-
-        // e.key === "Enter" ? setShow(true) : null
-        setShow(true);
-        setModalTitle(title)
+    const handleShowDesktop = (e) => {
+        setShow(true)
     }
     
     return ({
