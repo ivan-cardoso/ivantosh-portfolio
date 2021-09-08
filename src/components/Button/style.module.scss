@@ -9,6 +9,7 @@
     transition: all .2s linear;
     cursor: pointer;
     color: $dark;
+    min-width: 5rem;
 }
 .button:hover{
     background-color: $dark;
@@ -19,5 +20,6 @@
     .button{
         font-size: 1.1rem;
         padding: .5rem .8rem;
+        min-width: 10rem;
     }
 }

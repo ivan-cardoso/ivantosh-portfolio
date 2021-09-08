@@ -32,8 +32,8 @@ const MeSection = () => {
                 </div>
             </div>
             <div className={s.btn__container}>
-                <Button text={"Technologies"} />
                 <Button text={"Projects"} />
+                <Button text={"Technologies"} />
             </div>
         </div>
     )

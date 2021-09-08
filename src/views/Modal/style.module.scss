@@ -83,6 +83,7 @@ svg:not(:root) {
     height: inherit;
     border-radius: 0 0 1rem 1rem;
     overflow: scroll;
+    overflow-x: visible;
 }
 
 
@@ -99,4 +100,13 @@ svg:not(:root) {
     .modal__header__title{
         width: 70%;
     }
+    
+}
+
+@media (min-width:992px){
+    .modal__body{
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow:visible;
+    }
+    
 }
