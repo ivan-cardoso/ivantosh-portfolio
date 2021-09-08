@@ -82,6 +82,7 @@ svg:not(:root) {
 .modal__body{
     height: inherit;
     border-radius: 0 0 1rem 1rem;
+    overflow: scroll;
 }
 
 

@@ -1,0 +1,23 @@
+@import "../../assets/scss/colors.scss";
+.button{
+    background-color: transparent;
+    font-size: 1rem;
+    padding: .3rem .6rem;
+    font-weight: bold;
+    border: 3px solid $dark;
+    border-radius: .3rem;
+    transition: all .2s linear;
+    cursor: pointer;
+    color: $dark;
+}
+.button:hover{
+    background-color: $dark;
+    color: $secondary;
+}
+
+@media (min-width : 768px){
+    .button{
+        font-size: 1.1rem;
+        padding: .5rem .8rem;
+    }
+}
