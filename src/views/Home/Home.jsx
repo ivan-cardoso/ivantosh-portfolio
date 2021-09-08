@@ -23,7 +23,8 @@ const Home = () => {
             <div className="">
                 <div className={s.home__container}>
                     <div>
-                        <IconHome Icon={Computer} title={"Me"} 
+                        <IconHome Icon={Computer} 
+                            title={"Me"} 
                             handleShowDesktop={handleShowDesktop}
                             handleShowMobile={handleShowMobile}
                         />
@@ -60,7 +61,7 @@ const Home = () => {
                             handleShowMobile={handleShowMobile}
                         />
                     </div>
-                    {show ? <Modal handleClose={handleClose}  modalTitle={modalTitle}/> : <></>}
+                    {show && <Modal handleClose={handleClose}  modalTitle={modalTitle}/> }
                 </div>
             </div>
         </div>

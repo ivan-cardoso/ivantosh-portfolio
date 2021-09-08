@@ -8,11 +8,17 @@
     border: none;
     width: 6.4rem;
     padding:  .8rem;
+    height: fit-content;
+    cursor: pointer;
+}
+.button__container:hover{
+    background-color: $secondary
 }
 
 .icon__container{
     min-width: 4rem;
-    height: 4rem;
+    min-height: 5rem;
+    // height: 4rem;
     display: flex;
     align-items:center;
     justify-content: center;

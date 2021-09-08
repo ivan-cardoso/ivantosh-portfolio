@@ -17,6 +17,12 @@ const ModalBody = ({section}) => {
         if(section === "Download_Cv") return <DownloadSection/>
         if(section === "My_Goals") return <GoalsSection/>
         if(section === "Contact_Me") return <ContactSection/>
+
+        if(section === "Weather") return <EducationSection/>
+        if(section === "Ecommerce") return <TechnologiesSection/>
+        if(section === "Vintage Vibes") return <DownloadSection/>
+        if(section === "Quentin IMDB") return <GoalsSection/>
+        if(section === "Bumeran Selecta") return <ContactSection/>
     }
 
     return (
