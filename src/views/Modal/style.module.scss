@@ -79,6 +79,11 @@ svg:not(:root) {
     z-index: 1;
 }
 
+.modal__body{
+    height: inherit;
+    border-radius: 0 0 1rem 1rem;
+}
+
 
 @media (min-width:579px){
     .modal__container{

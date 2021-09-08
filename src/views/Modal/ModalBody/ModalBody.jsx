@@ -1,5 +1,5 @@
 import React from 'react'
-import MeSection from '../ModalSections/MeSection'
+import MeSection from '../ModalSections/MeSection/MeSection'
 import EducationSection from '../ModalSections/EducationSection'
 import TechnologiesSection from '../ModalSections/TechnologiesSection'
 import DownloadSection from '../ModalSections/DownloadSection'
@@ -20,9 +20,9 @@ const ModalBody = ({section}) => {
     }
 
     return (
-        <div>
+        <>
             <CurrentSection/>
-        </div>
+        </>
     )
 }
 
