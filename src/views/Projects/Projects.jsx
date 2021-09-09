@@ -3,6 +3,7 @@ import s from "./style.module.scss"
 
 import { ReactComponent as Xicon } from "../../utils/x.svg"
 import { ReactComponent as Computer } from "../../utils/computer.svg"
+import { ReactComponent as ListDecoration } from "../../utils/list-style.svg"
 import IconHome from '../../components/IconHome/IconHome'
 
 import Modal from '../Modal/Modal'
@@ -48,7 +49,26 @@ const Projects = ({ windowTitle }) => {
                 </div>
 
                 <div className={s.window__body__container}>
-                    <div className={s.window__body__sidebar} ></div>
+                    <div className={s.window__body__sidebar} >
+                        <ul className={s.window__sidebar__list} >
+                            <li><ListDecoration/><p>Me</p></li>
+
+                            <li>
+                                <ListDecoration/>
+                                <p className={s.window__sidebar__active}>Projects</p>
+                                <ul className={s.window__sidebar__projects} >
+                                    <li><ListDecoration/> <p>Weather</p></li>
+                                    <li><ListDecoration/> <p>Branch&Gamer</p></li>
+                                    <li><ListDecoration/> <p>Vintage Vibes</p></li>
+                                    <li><ListDecoration/> <p>Quentin IMDB</p></li>
+                                    <li><ListDecoration/> <p>Bumeran Selecta</p></li>
+                                </ul>
+                            </li>
+                            <li><ListDecoration/><p>Education</p></li>
+                            <li><ListDecoration/><p>Technologies</p></li>
+                            <li><ListDecoration/><p>Goals</p></li>
+                        </ul>
+                    </div>
 
                     <div className={s.window__body__files}>
                         <div className={s.window__icon__files__container} >
