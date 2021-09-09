@@ -86,13 +86,20 @@ svg:not(:root) {
     cursor: pointer;
     transition: all .1s linear;
     color: $dark;
+    svg{
+        fill: $dark;
+        stroke: $dark;
+        stroke-width: .5px;
+    }
 }
 
 .window__header__icon__controls:hover{
     background-color: $dark;
     color: $secondary;
     svg{
-        fill: $secondary
+        fill: $secondary;
+        stroke: $secondary;
+        stroke-width: .5px;
     }
 }
 

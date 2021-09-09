@@ -4,6 +4,10 @@ import s from "./style.module.scss"
 import { ReactComponent as Xicon } from "../../utils/x.svg"
 import { ReactComponent as Computer } from "../../utils/computer.svg"
 import { ReactComponent as ListDecoration } from "../../utils/list-style.svg"
+import { ReactComponent as ListIcon } from "../../utils/list-icon.svg"
+import { ReactComponent as ListSquare } from "../../utils/list-square.svg"
+import { ReactComponent as Back } from "../../utils/back.svg"
+import { ReactComponent as Forward } from "../../utils/forward.svg"
 import IconHome from '../../components/IconHome/IconHome'
 
 import Modal from '../Modal/Modal'
@@ -31,8 +35,8 @@ const Projects = ({ windowTitle }) => {
 
                     <div className={s.window__header__icons}  >
                         <div className={s.window__header__controls}>
-                            <button className={s.window__header__icon__controls} >v</button>
-                            <button className={s.window__header__icon__controls} >v</button>
+                            <button className={s.window__header__icon__controls} ><Back/></button>
+                            <button className={s.window__header__icon__controls} ><Forward/></button>
                         </div>
 
                         <input className={s.window__header__input}
@@ -42,8 +46,8 @@ const Projects = ({ windowTitle }) => {
                         />
 
                         <div className={s.window__header__controls}>
-                            <button className={s.window__header__icon__controls} >...</button>
-                            <button className={s.window__header__icon__controls} >...</button>
+                            <button className={s.window__header__icon__controls} ><ListIcon/></button>
+                            <button className={s.window__header__icon__controls} ><ListSquare/></button>
                         </div>
                     </div>
                 </div>
