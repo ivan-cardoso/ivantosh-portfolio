@@ -6,6 +6,12 @@ import DownloadSection from '../ModalSections/DownloadSection'
 import GoalsSection from '../ModalSections/GoalsSection'
 import ContactSection from '../ModalSections/ContactSection'
 
+import Bumeran from "../../Projects/SingleProjects/Bumeran"
+import Ecommerce from "../../Projects/SingleProjects/Ecommerce"
+import Imdb from "../../Projects/SingleProjects/Imdb"
+import VintageVibes from "../../Projects/SingleProjects/VintageVibes"
+import Weather from "../../Projects/SingleProjects/Weather"
+
 const ModalBody = ({section}) => {
 
     console.log(section)
@@ -18,11 +24,11 @@ const ModalBody = ({section}) => {
         if(section === "My_Goals") return <GoalsSection/>
         if(section === "Contact_Me") return <ContactSection/>
 
-        if(section === "Weather") return <EducationSection/>
-        if(section === "Ecommerce") return <TechnologiesSection/>
-        if(section === "Vintage Vibes") return <DownloadSection/>
-        if(section === "Quentin IMDB") return <GoalsSection/>
-        if(section === "Bumeran Selecta") return <ContactSection/>
+        if(section === "Weather") return <Weather/>
+        if(section === "Ecommerce") return <Ecommerce/>
+        if(section === "Vintage Vibes") return <VintageVibes/>
+        if(section === "Quentin IMDB") return <Imdb/>
+        if(section === "Bumeran Selecta") return <Bumeran/>
     }
 
     return (

@@ -40,7 +40,6 @@ const Projects = ({ windowTitle }) => {
                         </div>
 
                         <input className={s.window__header__input}
-
                             type="text"
                             value="I://IvanTosh/PC/Ivan/Desktop/My_projects"
                         />

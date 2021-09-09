@@ -1,0 +1,43 @@
+@import "../../../assets/scss/colors.scss";
+
+.single__project__container{
+    padding: 1rem 2rem;
+}
+.single__project__header{
+    text-align: center;
+}
+
+.single__project__section{
+    margin-top: 2rem ;
+}
+
+h3, p{
+    margin: 1rem 0;
+}
+.single__project__subtitle{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.single__project__text{
+    font-size: 1.2rem;
+}
+
+.single__project__container__img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+    align-items: center;
+    border-radius: 1rem;
+}
+.single__project__img{
+    width: 80%;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    border: solid 3px $dark;
+}
+
+.single__project__btn{
+    display: flex;
+    justify-content: space-around;
+}

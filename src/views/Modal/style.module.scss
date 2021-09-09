@@ -106,7 +106,7 @@ svg:not(:root) {
 @media (min-width:992px){
     .modal__body{
         overflow-x: hidden; /* Hide horizontal scrollbar */
-        overflow:visible;
+        // overflow:scroll;
     }
     
 }
