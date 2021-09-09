@@ -6,7 +6,7 @@ import ModalBody from './ModalBody/ModalBody'
 import ModalHeader from "./ModalHeader"
 
 
-const Modal = ({handleClose, modalTitle}) => {
+const Modal = ({handleClose, modalTitle, singleProject}) => {
 
     // const {show, handleShow, handleClose} = useModal()
 
@@ -15,7 +15,7 @@ const Modal = ({handleClose, modalTitle}) => {
             <div className={s.modal__container}>
                 <ModalHeader handleClose={handleClose} modalTitle={modalTitle}  />
                 <div className={s.modal__body}>
-                    <ModalBody section={modalTitle} />
+                    <ModalBody section={modalTitle} singleProject={singleProject} />
                 </div>
             </div>
         </div>

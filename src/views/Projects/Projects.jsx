@@ -115,7 +115,11 @@ const Projects = ({ windowTitle }) => {
                         </div>
                     </div>
                 </div>
-                {show && <Modal handleClose={handleClose}  modalTitle={modalTitle} />}
+                {show && <Modal 
+                            handleClose={handleClose}  
+                            modalTitle={modalTitle}
+                            singleProject={true} 
+                         />}
 
             </div>
         </>

@@ -5,12 +5,14 @@ import s from "./style.module.scss"
 import Button from "../../../components/Button/Button"
 import {Link} from "react-router-dom"
 
-const VintageVibes = () => {
+const VintageVibes = ({section}) => {
 
     const [data, setData] = useState({})
 
+    const project = section.split(" ").join("_").toLowerCase()
+
     useEffect(() => {
-        fetch("vintage.json")
+        fetch(`${project}.json`)
         .then((res)=>res.json())
         .then((pro)=>{setData(pro)}) 
         .catch((err)=>console.log("ERROR", err) )
@@ -18,7 +20,7 @@ const VintageVibes = () => {
 
     return (
         <>
-            {data? 
+            {data ? 
             <div className={s.single__project__container}>
                 {console.log(data)}
 
@@ -27,8 +29,17 @@ const VintageVibes = () => {
                 </header>
                 
                 <div className={s.single__project__section}>
-                    <h3 className={s.single__project__subtitle}>ABOUT THE PROJECT</h3>
-                    <p className={s.single__project__text}>{data.about}</p>
+                    <h3 className={s.single__project__subtitle}>ACERCA DEL PROYECTO</h3>
+
+                    {data.about ?
+                        data.about.map((e)=>{
+                        return (
+                            <p className={s.single__project__text}>{e}</p>
+                        )
+                    })
+                    : <></>
+                    }
+
                 </div>
 
                 <article className={s.single__project__container__img}>

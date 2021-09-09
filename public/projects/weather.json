@@ -1,6 +1,10 @@
 {
-    "title" : "Vintage Vibes",
-    "about" : "Ecommerce de Productos Vintage",
+    "title" : "El Clima Now",
+    "about" : [
+        "Ecommerce de Productos Tecnológicos.",
+        "Proyecto Grupal - Coding Bootcamp.",
+        "Se uso la metodología SCRUM para el trabajo en equipo."
+    ],
     "portrait" : "https://i.imgur.com/z4U3uVs.png",
     "features" : [
         "Encontrar camperas, camisas, cámaras y vinilos",
