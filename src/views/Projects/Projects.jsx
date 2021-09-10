@@ -2,12 +2,21 @@ import React from 'react'
 import s from "./style.module.scss"
 
 import { ReactComponent as Xicon } from "../../utils/x.svg"
-import { ReactComponent as Computer } from "../../utils/computer.svg"
 import { ReactComponent as ListDecoration } from "../../utils/list-style.svg"
 import { ReactComponent as ListIcon } from "../../utils/list-icon.svg"
 import { ReactComponent as ListSquare } from "../../utils/list-square.svg"
 import { ReactComponent as Back } from "../../utils/back.svg"
 import { ReactComponent as Forward } from "../../utils/forward.svg"
+
+
+import { ReactComponent as Computer } from "../../utils/computer.svg"
+import { ReactComponent as Weather } from "../../utils/weather.svg"
+import { ReactComponent as Branch } from "../../utils/branch.svg"
+import { ReactComponent as Vintage } from "../../utils/vintage.svg"
+import { ReactComponent as Omdb } from "../../utils/omdb.svg"
+import { ReactComponent as Bumeran } from "../../utils/bumeran.svg"
+
+
 import IconHome from '../../components/IconHome/IconHome'
 
 import Modal from '../Modal/Modal'
@@ -75,7 +84,7 @@ const Projects = ({ windowTitle }) => {
 
                     <div className={s.window__body__files}>
                         <div className={s.window__icon__files__container} >
-                            <IconHome Icon={Computer} 
+                            <IconHome Icon={Weather} 
                                 title={"Weather"} 
                                 handleShowDesktop={handleShowDesktop}
                                 handleShowMobile={handleShowMobile}/>
@@ -83,7 +92,7 @@ const Projects = ({ windowTitle }) => {
 
                         <div className={s.window__icon__files__container}>
                             <IconHome 
-                                Icon={Computer} 
+                                Icon={Branch} 
                                 title={"Ecommerce"}
                                 handleShowDesktop={handleShowDesktop}
                                 handleShowMobile={handleShowMobile}
@@ -91,7 +100,7 @@ const Projects = ({ windowTitle }) => {
                         </div>
                         <div className={s.window__icon__files__container}>
                             <IconHome 
-                                Icon={Computer}
+                                Icon={Vintage}
                                 title={"Vintage Vibes"}
                                 handleShowDesktop={handleShowDesktop}
                                 handleShowMobile={handleShowMobile}
@@ -99,7 +108,7 @@ const Projects = ({ windowTitle }) => {
                         </div>
                         <div className={s.window__icon__files__container}>
                             <IconHome 
-                                Icon={Computer} 
+                                Icon={Omdb} 
                                 title={"Quentin IMDB"}
                                 handleShowDesktop={handleShowDesktop}
                                 handleShowMobile={handleShowMobile}
@@ -107,7 +116,7 @@ const Projects = ({ windowTitle }) => {
                         </div>
                         <div className={s.window__icon__files__container}>
                             <IconHome 
-                                Icon={Computer} 
+                                Icon={Bumeran} 
                                 title={"Bumeran Selecta"}
                                 handleShowDesktop={handleShowDesktop}
                                 handleShowMobile={handleShowMobile}

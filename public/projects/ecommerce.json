@@ -5,7 +5,7 @@
         "Proyecto Grupal - Coding Bootcamp.",
         "Se uso la metodología SCRUM para el trabajo en equipo."
     ],
-    "portrait" : "https://i.imgur.com/z4U3uVs.png",
+    "portrait" : "https://i.imgur.com/xzfx1uu.png",
     "features" : [
         "Crear y autenticar usuarios con Google.",
         "Agregar, borrar y comprar productos desde un carrito de compras.",
@@ -16,10 +16,11 @@
     "backend" : ["Node", "Express", "Sequelize", "PostgreSQL", "JWT"],
     "methodology" : ["SCRUM"],
     "images" : [
-        "https://i.imgur.com/DYYFBBa.png",
-        "https://i.imgur.com/QNAUOng.png",
-        "https://i.imgur.com/i7Op6rK.png",
-        "https://i.imgur.com/XtOOX8V.png"
+        "https://i.imgur.com/GuN6nh1.png",
+        "https://i.imgur.com/JOJxIqb.png",
+        "https://i.imgur.com/oCbYkbl.png",
+        "https://i.imgur.com/JLMXtZY.png"
+
     ],
     "github" : "https://github.com/ivan-cardoso/branch-and-gamer"
 }

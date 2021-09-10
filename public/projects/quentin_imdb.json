@@ -4,7 +4,7 @@
         "Proyecto Individual - Coding Bootcamp.",
         "Aplicación web para buscar información sobre series y películas, consumiendo la API de IMDB."
     ],
-    "portrait" : "https://i.imgur.com/z4U3uVs.png",
+    "portrait" : "https://i.imgur.com/2PvGEWw.png",
     "features" : [
         "Buscar películas y listarlas.",
         "Poder ver los detalles de una película en particular.",
@@ -20,10 +20,8 @@
     "backend" : ["Node", "Express", "Sequelize", "PostgreSQL", "Passport"],
     "methodology" : ["SCRUM"],
     "images" : [
-        "https://i.imgur.com/DYYFBBa.png",
-        "https://i.imgur.com/QNAUOng.png",
-        "https://i.imgur.com/i7Op6rK.png",
-        "https://i.imgur.com/XtOOX8V.png"
+        "https://i.imgur.com/WDPYr8r.png",
+        "https://i.imgur.com/OzYopQy.png"    
     ],
     "github" : "https://github.com/ivan-cardoso/Quentin-OMDB"
 }
