@@ -1,0 +1,112 @@
+@import "../../assets/scss/colors.scss"; 
+
+.modal__section{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(214, 207, 179, 0.349);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.modal__container{
+    background-color: $secondary;
+    width: 85%;
+    height: 80%;
+    border-radius: 1rem;
+    border : 3px solid $dark; 
+    box-shadow: 8px 8px 1.5px $dark;
+}
+
+.modal__header{
+    display: flex;
+    // background-color: red;
+    align-items: center;
+    height: 3rem;
+    border-radius: .9rem  .9rem 0 0;
+    overflow: hidden;
+    border-bottom: 3px solid $dark;
+}
+
+.modal__header__controls{
+    display: flex;
+    justify-content: space-evenly;
+    // align-items: center;
+    // background-color: red;
+    width: 6rem;
+    z-index: 5;
+}
+
+.modal__header__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid #3b3a3a;
+    font-weight: bold;
+    font-family: cursive;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.modal__header__btn:hover{
+    background-color: $dark;
+    color: $secondary;
+    svg{
+        fill: $secondary
+    }
+}
+.modal__header__btn:focus-visible{
+    outline: 3px solid $dark;
+}
+
+svg:not(:root) {
+    overflow: inherit;
+}
+
+.modal__header__title{
+    justify-content: center;
+    display: flex;
+    width: 85%;
+    position: absolute;
+    z-index: 1;
+}
+
+.modal__body{
+    height: inherit;
+    border-radius: 0 0 1rem 1rem;
+    overflow: scroll;
+    overflow-x: visible;
+}
+
+
+@media (min-width:579px){
+    .modal__container{
+        width: 70%;
+        height: 80%;
+    }
+
+    .modal__header__btn{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .modal__header__title{
+        width: 70%;
+    }
+    
+}
+
+@media (min-width:992px){
+    .modal__body{
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        // overflow:scroll;
+    }
+    
+}

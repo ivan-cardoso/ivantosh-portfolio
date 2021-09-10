@@ -1,0 +1,26 @@
+{
+    "title" : "Bumeran Selecta - Navent",
+    "about" : [
+        "Proyecto Profesional Grupal - Coding Bootcamp Plataforma 5",
+        "Desarrollo de plataforma para agilizar el proceso de asignación de reclutadores a las búsquedas de talento de las empresas.",
+        "Se uso la metodología SCRUM para el trabajo en equipo."
+    ],
+    "portrait" : "https://i.imgur.com/kn2ZAgg.png",
+    "features" : [
+        "Gestionar búsquedas, reclutadores y empresas.",
+        "Mostrar por cada empleo los mejores reclutadores de acuerdo a su área de trabajo, reputación y país.",
+        "Asignar el reclutador a un empleo y calificarlo por su desempeño.",
+        "Manejar acciones y permisos según diferentes roles de los usuarios."
+    ],
+    "frontend" : ["React Js", "Redux", "Material UI", "Css"],
+    "backend" : ["Node", "Express", "Sequelize", "PostgreSQL", "Firebase"],
+    "methodology" : ["SCRUM"],
+    "images" : [
+        "https://i.imgur.com/HqzCmrr.png",
+        "https://i.imgur.com/APHMU98.png",
+        "https://i.imgur.com/4BSET2O.png",
+        "https://i.imgur.com/iWe7nK1.png"
+    ],
+    "github" : "https://github.com/ivan-cardoso/bumeran-selecta",
+    "demo" : ""
+}

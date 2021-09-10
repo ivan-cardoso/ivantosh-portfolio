@@ -1,0 +1,26 @@
+{
+    "title" : "BRANCH & GAMER",
+    "about" : [
+        "Ecommerce de Productos Tecnológicos.",
+        "Proyecto Grupal - Coding Bootcamp.",
+        "Se uso la metodología SCRUM para el trabajo en equipo."
+    ],
+    "portrait" : "https://i.imgur.com/xzfx1uu.png",
+    "features" : [
+        "Crear y autenticar usuarios con Google.",
+        "Agregar, borrar y comprar productos desde un carrito de compras.",
+        "Ver y valorar las compras realizadas.",
+        "Panel para administrar productos, compras, categorías y usuarios."
+    ],
+    "frontend" : ["React Js", "Redux", "React Bootstrap", "Css"],
+    "backend" : ["Node", "Express", "Sequelize", "PostgreSQL", "JWT"],
+    "methodology" : ["SCRUM"],
+    "images" : [
+        "https://i.imgur.com/GuN6nh1.png",
+        "https://i.imgur.com/JOJxIqb.png",
+        "https://i.imgur.com/oCbYkbl.png",
+        "https://i.imgur.com/JLMXtZY.png"
+
+    ],
+    "github" : "https://github.com/ivan-cardoso/branch-and-gamer"
+}

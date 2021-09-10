@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import IconHome from '../../components/IconHome/IconHome'
 import s from "./style.module.scss"
 
@@ -12,36 +12,56 @@ import { ReactComponent as FileInfolder } from "../../utils/file-in-folder.svg"
 import { ReactComponent as PaperClip } from "../../utils/paperclip.svg"
 import { ReactComponent as File } from "../../utils/file.svg"
 import { ReactComponent as Context } from "../../utils/context.svg"
+import useModal from "../../hooks/useModal"
 
 const Home = () => {
-
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    
+    const {show, modalTitle, handleShow, handleShowDesktop, handleShowMobile, handleClose} = useModal()
 
     return (
         <div>
             <div className="">
                 <div className={s.home__container}>
                     <div>
-                        <IconHome Icon={Computer} title={"Me"} handleShow={handleShow} />
+                        <IconHome Icon={Computer} 
+                            title={"Me"} 
+                            handleShowDesktop={handleShowDesktop}
+                            handleShowMobile={handleShowMobile}
+                        />
                     </div>
                     <div>
-                        <IconHome Icon={FileInfolder} title={"My_Projects"} />
+                        <IconHome Icon={FileInfolder} title={"My_Projects"} 
+                            handleShowDesktop={handleShowDesktop}
+                            handleShowMobile={handleShowMobile}
+                        />
                     </div>
                     <div>
-                        <IconHome Icon={ivanExplorer} title={"Education"} />
+                        <IconHome Icon={ivanExplorer} title={"Education"} 
+                            handleShowDesktop={handleShowDesktop}
+                            handleShowMobile={handleShowMobile}
+                        />
                     </div>
                     <div className={s.double__icon__row} >
-                        <IconHome Icon={FileInfolder} title={"Technologies"} />
-                        <IconHome Icon={Computer} title={"Download_Cv"} />
+                        <IconHome Icon={FileInfolder} title={"Technologies"} 
+                            handleShowDesktop={handleShowDesktop}
+                            handleShowMobile={handleShowMobile} 
+                        />
+                        <IconHome Icon={Computer} title={"Download_Cv"} 
+                            handleShowDesktop={handleShowDesktop}
+                            handleShowMobile={handleShowMobile}
+                        />
                     </div>
                     <div className={s.double__icon__row}>
-                        <IconHome Icon={FileInfolder} title={"My_Goals"} />
-                        <IconHome Icon={Computer} title={"Contact_Me"} />
+                        <IconHome Icon={FileInfolder} title={"My_Goals"} 
+                            handleShowDesktop={handleShowDesktop}
+                            handleShowMobile={handleShowMobile}
+                        />
+                        <IconHome Icon={Computer} title={"Contact_Me"} 
+                            handleShowDesktop={handleShowDesktop}
+                            handleShowMobile={handleShowMobile}
+                        />
                     </div>
-                    {show && <Modal/>}
+                    {show && <Modal handleClose={handleClose}  modalTitle={modalTitle}/> }
                 </div>
             </div>
         </div>
