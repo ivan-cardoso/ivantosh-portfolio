@@ -5,7 +5,7 @@
         "duration" : "2021",
         "description" : [
             "Programa intensivo fulltime especializado en Javascript para el desarrollo front-end y back-end de aplicaciones web.",
-            "+800 horas de duración en 15 semanas.",
+            "Más 800 horas de duración en 15 semanas.",
             "Uso de la metodología Scrum para el trabajo en equipo y PairProgramming como dinámica de aprendizaje.",
             "Pude poner a prueba y fortalecer habilidades como el trabajo en equipo, el rápido aprendizaje, la escucha activa y la adaptación a constantes cambios."
         ],
@@ -65,8 +65,8 @@
         "description" : [
             "Formación para comprender las estructuras de la programación, diagnosticar las necesidades del usuario y diseñar nuevos sistemas."
         ],
-        "technologies" : [],
-        "projects" : []
+        "technologies" : null,
+        "projects" : null
     }
     
 ]
