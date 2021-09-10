@@ -12,7 +12,12 @@ const VintageVibes = ({section}) => {
     const project = section.split(" ").join("_").toLowerCase()
 
     useEffect(() => {
-        fetch(`${project}.json`)
+        fetch(`/projects/${project}.json`, {
+            headers : { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+             }
+          })
         .then((res)=>res.json())
         .then((pro)=>{setData(pro)}) 
         .catch((err)=>console.log("ERROR", err) )
@@ -22,7 +27,6 @@ const VintageVibes = ({section}) => {
         <>
             {data ? 
             <div className={s.single__project__container}>
-                {console.log(data)}
 
                 <header className={s.single__project__header} >
                     <h1>{data.title}</h1>

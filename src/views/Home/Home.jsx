@@ -15,53 +15,62 @@ import { ReactComponent as Context } from "../../utils/context.svg"
 import useModal from "../../hooks/useModal"
 
 const Home = () => {
-    
-    const {show, modalTitle, handleShow, handleShowDesktop, handleShowMobile, handleClose} = useModal()
+
+    const {
+        show,
+        modalTitle,
+        handleShow,
+        handleShowDesktop,
+        handleShowMobile,
+        handleClose,
+        handleProjectsMobile,
+        handleProjects
+    } = useModal()
 
     return (
         <div>
             <div className="">
                 <div className={s.home__container}>
                     <div>
-                        <IconHome Icon={Computer} 
-                            title={"Me"} 
+                        <IconHome Icon={Computer}
+                            title={"Me"}
                             handleShowDesktop={handleShowDesktop}
                             handleShowMobile={handleShowMobile}
                         />
                     </div>
                     <div>
-                        <IconHome Icon={FileInfolder} title={"My_Projects"} 
-                            handleShowDesktop={handleShowDesktop}
-                            handleShowMobile={handleShowMobile}
+                        <IconHome Icon={FileInfolder} title={"My_Projects"}
+                            handleShowDesktop={handleProjects}
+                            handleShowMobile={handleProjectsMobile}
                         />
                     </div>
                     <div>
-                        <IconHome Icon={ivanExplorer} title={"Education"} 
+                        <IconHome Icon={ivanExplorer} title={"Education"}
                             handleShowDesktop={handleShowDesktop}
                             handleShowMobile={handleShowMobile}
                         />
                     </div>
                     <div className={s.double__icon__row} >
-                        <IconHome Icon={FileInfolder} title={"Technologies"} 
+                        <IconHome Icon={FileInfolder} title={"Technologies"}
                             handleShowDesktop={handleShowDesktop}
-                            handleShowMobile={handleShowMobile} 
+                            handleShowMobile={handleShowMobile}
                         />
-                        <IconHome Icon={Computer} title={"Download_Cv"} 
+                        <IconHome Icon={Computer} title={"Download_Cv"}
                             handleShowDesktop={handleShowDesktop}
                             handleShowMobile={handleShowMobile}
                         />
                     </div>
                     <div className={s.double__icon__row}>
-                        <IconHome Icon={FileInfolder} title={"My_Goals"} 
+                        <IconHome Icon={FileInfolder} title={"My_Goals"}
                             handleShowDesktop={handleShowDesktop}
                             handleShowMobile={handleShowMobile}
                         />
-                        <IconHome Icon={Computer} title={"Contact_Me"} 
+                        <IconHome Icon={Computer} title={"Contact_Me"}
                             handleShowDesktop={handleShowDesktop}
                             handleShowMobile={handleShowMobile}
                         />
                     </div>
-                    {show && <Modal handleClose={handleClose}  modalTitle={modalTitle}/> }
+                    {show && <Modal handleClose={handleClose} modalTitle={modalTitle} />}
                 </div>
             </div>
         </div>

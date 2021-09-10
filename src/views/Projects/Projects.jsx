@@ -22,6 +22,8 @@ import IconHome from '../../components/IconHome/IconHome'
 import Modal from '../Modal/Modal'
 import useModal from "../../hooks/useModal"
 
+import {Link} from "react-router-dom"
+
 
 const Projects = ({ windowTitle }) => {
 
@@ -35,7 +37,9 @@ const Projects = ({ windowTitle }) => {
                     <div className={s.window__header}>
                         <div className={s.window__header__controls}>
                             <button className={s.window__header__btn}>
-                                <Xicon className={s.window__header__svg} />
+                                <Link to={"/"}>
+                                    <Xicon className={s.window__header__svg} />
+                                </Link>
                             </button>
                             <button className={s.window__header__btn} ></button>
                         </div>

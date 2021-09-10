@@ -1,16 +1,12 @@
 import React from 'react'
 import MeSection from '../ModalSections/MeSection/MeSection'
-import EducationSection from '../ModalSections/EducationSection'
+import EducationSection from '../ModalSections/EducationSection/EducationSection'
 import TechnologiesSection from '../ModalSections/TechnologiesSection'
 import DownloadSection from '../ModalSections/DownloadSection'
 import GoalsSection from '../ModalSections/GoalsSection'
 import ContactSection from '../ModalSections/ContactSection'
 
-import Bumeran from "../../Projects/SingleProjects/Bumeran"
-import Ecommerce from "../../Projects/SingleProjects/Ecommerce"
-import Imdb from "../../Projects/SingleProjects/Imdb"
 import SingleProject from "../../Projects/SingleProjects/SingleProject"
-import Weather from "../../Projects/SingleProjects/Weather"
 
 const ModalBody = ({section, singleProject}) => {
 
