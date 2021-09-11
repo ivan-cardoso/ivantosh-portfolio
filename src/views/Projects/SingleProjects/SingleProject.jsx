@@ -25,7 +25,7 @@ const VintageVibes = ({section}) => {
 
     return (
         <>
-            {data ? 
+            {data.title ? 
             <div className={s.single__project__container}>
 
                 <header className={s.single__project__header} >

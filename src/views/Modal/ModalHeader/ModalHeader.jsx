@@ -1,6 +1,6 @@
 import React from 'react'
-import {ReactComponent as  Xicon} from "../../utils/x.svg"
-import s from "./style.module.scss"
+import {ReactComponent as  Xicon} from "../../../utils/x.svg"
+import s from ".././style.module.scss"
 
 const ModalHeader = ({handleClose, modalTitle}) => {
     return (

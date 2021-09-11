@@ -36,11 +36,11 @@ const Projects = ({ windowTitle }) => {
 
                     <div className={s.window__header}>
                         <div className={s.window__header__controls}>
-                            <button className={s.window__header__btn}>
-                                <Link to={"/"}>
-                                    <Xicon className={s.window__header__svg} />
-                                </Link>
-                            </button>
+                            <Link to={"/"}>
+                                <button className={s.window__header__btn}>
+                                        <Xicon className={s.window__header__svg} />
+                                </button>
+                            </Link>
                             <button className={s.window__header__btn} ></button>
                         </div>
                         <h4 className={s.window__header__title} >Projects_txt</h4>

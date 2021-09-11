@@ -3,7 +3,7 @@ import s from "./style.module.scss"
 import useModal from "../../hooks/useModal"
 import {ReactComponent as  Xicon} from "../../utils/x.svg"
 import ModalBody from './ModalBody/ModalBody'
-import ModalHeader from "./ModalHeader"
+import ModalHeader from "./ModalHeader/ModalHeader"
 
 
 const Modal = ({handleClose, modalTitle, singleProject}) => {

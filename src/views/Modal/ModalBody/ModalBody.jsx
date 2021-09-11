@@ -1,10 +1,12 @@
 import React from 'react'
 import MeSection from '../ModalSections/MeSection/MeSection'
+// import EducationSection from '../ModalSections/EducationSection/EducationSection'
 import EducationSection from '../ModalSections/EducationSection/EducationSection'
-import TechnologiesSection from '../ModalSections/TechnologiesSection'
-import DownloadSection from '../ModalSections/DownloadSection'
-import GoalsSection from '../ModalSections/GoalsSection'
-import ContactSection from '../ModalSections/ContactSection'
+
+import TechnologiesSection from '../ModalSections/TechnologiesSection/TechnologiesSection'
+import DownloadSection from '../ModalSections/DownloadSection/DownloadSection'
+import GoalsSection from '../ModalSections/GoalsSection/GoalsSection'
+import ContactSection from '../ModalSections/ContactSection/ContactSection'
 
 import SingleProject from "../../Projects/SingleProjects/SingleProject"
 
