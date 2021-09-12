@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import p from "../../../Projects/style.module.scss"
-import s from "./style.module.scss"
+import s from "../style.module.scss"
 import me from ".././MeSection/style.module.scss"
 
 const EducarionSection = () => {
@@ -65,7 +65,6 @@ const EducarionSection = () => {
                     }
 
                 </div>
-                {console.log(data)}
             </div>
         )
     }

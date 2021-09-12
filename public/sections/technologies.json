@@ -1,0 +1,18 @@
+{
+    "title" : "Tecnologías",
+    "tech" : [
+        "JavaScript",
+        "React",
+        "Redux - React Hooks",
+        "HTML",
+        "CSS - Sass",
+        "Bootstrap",
+        "Node",
+        "Express",
+        "Sequelize",
+        "PostreSQL", 
+        "Git - GitHub",
+        "Jwt - Passport",
+        "Material UI"
+    ]
+}
