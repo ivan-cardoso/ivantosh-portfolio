@@ -23,12 +23,30 @@ const useModal = () =>{
 
     const handleProjectsMobile = () =>{
         if(window.matchMedia("(max-width : 500px)").matches){
-            history.push("/projects")
+            handleProjects()
         }
     }
 
     const handleProjects = () =>{
-        history.push("/projects")
+        return history.push("/projects")
+    }
+
+    const handlePdf = () =>{
+        const link = document.createElement("a")
+        link.href = "CV-Ivan Cardoso.pdf"
+        link.setAttribute(
+            'download',
+            `CV-Ivan Cardoso.pdf`,
+          );
+        document.body.appendChild(link)
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    const handlePdfMobile = () =>{
+        if(window.matchMedia("(max-width : 500px)").matches){
+            handlePdf()
+        }
     }
 
     return ({
@@ -38,7 +56,9 @@ const useModal = () =>{
         handleShowMobile,
         handleShowDesktop,
         handleProjectsMobile,
-        handleProjects
+        handleProjects,
+        handlePdf,
+        handlePdfMobile
     })
 }
 
