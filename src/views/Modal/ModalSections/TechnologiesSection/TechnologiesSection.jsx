@@ -7,6 +7,7 @@ import { SiJavascript, SiRedux, SiHtml5, SiCss3, SiPostgresql, SiJsonwebtokens, 
 import { BiLoaderAlt } from "react-icons/bi"
 import Button from '../../../../components/Button/Button';
 import { ReactComponent as Express } from "../../../../utils/expressjs.svg"
+import { Link } from 'react-router-dom';
 const TechnologiesSection = () => {
     return (
         <div>
@@ -74,12 +75,15 @@ const TechnologiesSection = () => {
 
                 <div className={s.learning__technology__container} >
                     <h3 className={s.title__h3} >Siempre aprendiendo...</h3>
-                    {/* <BiLoaderAlt className={s.icon__technology__loader} /> */}
                 </div>
 
                 <div className={s.btn__container}>
-                    <Button text={"Projectos"} />
-                    <Button text={"Contacto"} />
+                    <Link to={"/projects"}> 
+                        <Button text={"Proyectos"} />
+                    </Link>
+                    <Link to={"/contact"}> 
+                        <Button text={"Contacto"} />
+                    </Link>
                  </div>
 
             </div>

@@ -1,5 +1,5 @@
 .me__section{
-    padding: 2rem 2rem 0 2rem;
+    // padding: 2rem 2rem 0 2rem;
 }
 
 .me__container{
@@ -73,9 +73,9 @@ h2, h3{
 
 
 @media (min-width : 992px){
-    .me__section{
-        padding: 2rem;
-    }
+    // .me__section{
+    //     padding: 2rem;
+    // }
     .me__container{
         flex-direction: row;
     }

@@ -7,7 +7,7 @@ import Projects from "./views/Projects/Projects"
 function App() {
   return (
     <>
-      <NavBar/>
+      {/* <NavBar/> */}
       <Switch>
         <Route exact path={"/"} component={Home} />
         <Route exact path={"/projects"} component={Projects} />

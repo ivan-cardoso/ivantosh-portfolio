@@ -1,4 +1,10 @@
 @import "../../../assets/scss/colors.scss";
+
+
+.modal__section{
+    padding: 2rem 2rem 0 2rem;
+}
+
 .modal__title{
     text-align: center;
     margin: 0;
@@ -115,4 +121,19 @@
     display: flex;
     justify-content: space-around;
     margin-top: 1.3rem;
+}
+
+.goals__section{
+    // padding: 2rem 2rem 0 2rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width : 768px){
+    .goals__section{
+        margin-top: 0;
+    }
 }

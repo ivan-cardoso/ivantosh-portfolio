@@ -1,3 +1,5 @@
+/* @import "./assets/scss/colors.scss"  */
+
 .App {
   text-align: center;
 }
@@ -34,5 +36,28 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width : 576px){
+  ::-webkit-scrollbar {
+    width: .7rem;
+    padding-right: 1rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f7ead3;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background:#5f5e5e7c;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7a7a7a;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #3b3a3a;
   }
 }

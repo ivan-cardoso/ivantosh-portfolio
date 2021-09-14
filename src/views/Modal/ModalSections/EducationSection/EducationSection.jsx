@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import p from "../../../Projects/style.module.scss"
 import s from "../style.module.scss"
 import me from ".././MeSection/style.module.scss"
 
@@ -18,7 +17,6 @@ const EducarionSection = () => {
             <div>
                 <div className={me.me__section}>
                     <h1 className={s.modal__title}>My Education</h1>
-
                     {data ? 
 
                         data.map((e)=>{

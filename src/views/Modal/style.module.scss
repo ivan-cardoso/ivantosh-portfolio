@@ -14,8 +14,8 @@
 
 .modal__container{
     background-color: $secondary;
-    width: 85%;
-    height: 80%;
+    width: 90%;
+    height: 85%;
     border-radius: 1rem;
     border : 3px solid $dark; 
     box-shadow: 8px 8px 1.5px $dark;
@@ -80,17 +80,19 @@ svg:not(:root) {
 }
 
 .modal__body{
-    height: inherit;
+    // height: inherit;
+    height: 80%;
     border-radius: 0 0 1rem 1rem;
     overflow: scroll;
     overflow-x: visible;
+    padding: 2rem 1rem 0 1rem;
 }
 
 
 @media (min-width:579px){
     .modal__container{
-        width: 70%;
-        height: 80%;
+        width: 80%;
+        height: 85%;
     }
 
     .modal__header__btn{
@@ -98,7 +100,7 @@ svg:not(:root) {
         height: 1.8rem;
     }
     .modal__header__title{
-        width: 70%;
+        width: 80%;
     }
     
 }
@@ -107,6 +109,8 @@ svg:not(:root) {
     .modal__body{
         overflow-x: hidden; /* Hide horizontal scrollbar */
         overflow-y: auto; /* Hide horizontal scrollbar */
+        // height: 91%;
+        padding: 2rem 2rem 0 2rem;
     }
     
 }
