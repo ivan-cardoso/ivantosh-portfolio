@@ -23,6 +23,7 @@ import Modal from '../Modal/Modal'
 import useModal from "../../hooks/useModal"
 
 import {Link} from "react-router-dom"
+import WindowHeader from './WindowHeader'
 
 
 const Projects = ({ windowTitle }) => {
@@ -32,37 +33,8 @@ const Projects = ({ windowTitle }) => {
     return (
         <>
             <div className={s.window__container} >
-                <div className={s.window__header__container}>
 
-                    <div className={s.window__header}>
-                        <div className={s.window__header__controls}>
-                            <Link to={"/"}>
-                                <button className={s.window__header__btn}>
-                                        <Xicon className={s.window__header__svg} />
-                                </button>
-                            </Link>
-                            <button className={s.window__header__btn} ></button>
-                        </div>
-                        <h4 className={s.window__header__title} >Projects_txt</h4>
-                    </div>
-
-                    <div className={s.window__header__icons}  >
-                        <div className={s.window__header__controls}>
-                            <button className={s.window__header__icon__controls} ><Back/></button>
-                            <button className={s.window__header__icon__controls} ><Forward/></button>
-                        </div>
-
-                        <input className={s.window__header__input}
-                            type="text"
-                            value="I://IvanTosh/PC/Ivan/Desktop/My_projects"
-                        />
-
-                        <div className={s.window__header__controls}>
-                            <button className={s.window__header__icon__controls} ><ListIcon/></button>
-                            <button className={s.window__header__icon__controls} ><ListSquare/></button>
-                        </div>
-                    </div>
-                </div>
+                <WindowHeader windowTitle={"Projects"} />
 
                 <div className={s.window__body__container}>
                     <div className={s.window__body__sidebar} >

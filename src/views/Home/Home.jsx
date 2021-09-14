@@ -34,8 +34,8 @@ const Home = () => {
         handleShowDesktop,
         handleShowMobile,
         handleClose,
-        handleProjectsMobile,
-        handleProjects,
+        handleLink,
+        handleLinkMobile,
         handlePdf,
         handlePdfMobile
     } = useModal()
@@ -52,8 +52,8 @@ const Home = () => {
                 </div>
                 <div>
                     <IconHome Icon={VscFolderOpened} title={"My_Projects"}
-                        handleShowDesktop={handleProjects}
-                        handleShowMobile={handleProjectsMobile}
+                        handleShowDesktop={()=>handleLink("projects")}
+                        handleShowMobile={()=>handleLinkMobile("projects")}
                     />
                 </div>
                 <div>

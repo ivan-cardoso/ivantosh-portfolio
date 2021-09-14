@@ -1,0 +1,79 @@
+@import "../../assets/scss/colors.scss";
+
+.contact__container{
+    background-color: $secondary;
+    min-height: 81vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-evenly;
+    padding: 1rem;
+}
+
+
+.contact__form__section{
+    // width: ;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // padding: 1rem;
+    width: 100%;
+
+    height:33rem;
+    border: 3px $dark solid;
+
+    .contact__title__container{
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        border-bottom: 3px solid $dark;
+        padding: 1rem;
+    }
+    
+    .contact__title{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    
+    label{
+        font-weight: bold;
+        margin: .5rem 0 ;
+    }
+}
+
+.contact__form__container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    margin: 1rem;
+}
+
+.contact__form__input{
+    min-height: 2rem;
+    border: 3px $dark solid;
+    max-width: 100%;
+    resize: none;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.contact__btn__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+@media (min-width:768px){
+    .contact__form__section{
+        width:55%;
+    }
+}

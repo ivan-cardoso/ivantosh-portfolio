@@ -21,14 +21,14 @@ const useModal = () =>{
         setShow(true)
     }
 
-    const handleProjectsMobile = () =>{
+    const handleLinkMobile = (link) =>{
         if(window.matchMedia("(max-width : 500px)").matches){
-            handleProjects()
+            handleLink(link)
         }
     }
 
-    const handleProjects = () =>{
-        return history.push("/projects")
+    const handleLink = (link) =>{
+        return history.push(`/${link}`)
     }
 
     const handlePdf = () =>{
@@ -55,8 +55,8 @@ const useModal = () =>{
         handleClose, 
         handleShowMobile,
         handleShowDesktop,
-        handleProjectsMobile,
-        handleProjects,
+        handleLinkMobile,
+        handleLink,
         handlePdf,
         handlePdfMobile
     })
