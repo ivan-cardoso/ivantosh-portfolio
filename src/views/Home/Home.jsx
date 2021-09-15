@@ -80,8 +80,8 @@ const Home = () => {
                         handleShowMobile={handleShowMobile}
                     />
                     <IconHome Icon={RiChatSmile3Line} title={"Contact_Me"}
-                        handleShowDesktop={handleShowDesktop}
-                        handleShowMobile={handleShowMobile}
+                        handleShowDesktop={()=>handleLink("contact")}
+                        handleShowMobile={()=>handleLinkMobile("contact")}
                     />
                 </div>
                 {show && <Modal handleClose={handleClose} modalTitle={modalTitle} />}

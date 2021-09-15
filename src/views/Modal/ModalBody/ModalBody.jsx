@@ -12,7 +12,7 @@ import SingleProject from "../../Projects/SingleProjects/SingleProject"
 
 const ModalBody = ({section, singleProject}) => {
 
-    console.log(section)
+    console.log("SECTION", section)
     const CurrentSection = () =>{
         if(section === "Me") return <MeSection/>
         // if(section === "My_Projects") return <ProjectsSection/>
@@ -23,7 +23,12 @@ const ModalBody = ({section, singleProject}) => {
         if(section === "My_Goals") return <GoalsSection/>
         if(section === "Contact_Me") return <ContactSection/> 
         
+        if(section === "contact_message") return <ContactSection/> 
+        
         if(singleProject) return <SingleProject section={section} />
+
+        return <EducationSection/>
+        
     }
 
     return (

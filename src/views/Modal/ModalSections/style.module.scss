@@ -1,6 +1,5 @@
 @import "../../../assets/scss/colors.scss";
 
-
 .modal__section{
     padding: 2rem 2rem 0 2rem;
 }
@@ -131,6 +130,16 @@
     display: flex;
     flex-direction: column;
 }
+.contact__message{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact__text{
+    text-align: center;
+}
+
 
 @media (min-width : 768px){
     .goals__section{
