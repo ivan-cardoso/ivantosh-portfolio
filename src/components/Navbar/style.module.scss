@@ -1,6 +1,6 @@
 @import "../../assets/scss/colors.scss";
 .navbar__container{
-    height: 1.7rem;
+    height: 1.9rem;
     background-color: #3b3a3a;
     position: sticky;
     top: 0;
@@ -15,17 +15,24 @@
     }
 }
 
+.navbar__icon__container{
+    display: flex;
+    align-items: center;
+    svg{
+        margin-right:.4rem;
+    }
+}
 .navbar__text{
     margin: 0;
     color: #5f5e5e7c;
     font-weight: 500;
     color: white;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
-.navbar__icon__container{
-    display: flex;
-    svg{
-        margin-right:.4rem;
+
+@media (min-width : 768px){
+    .navbar__text{
+        font-size: .9rem;
     }
 }

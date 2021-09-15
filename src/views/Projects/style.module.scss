@@ -6,9 +6,14 @@
     height: 100vh;
 }
 .window__header__container{
-    border-bottom: 3px solid $dark;
-    position:sticky;
-    top: 0;
+    // border-bottom: 3px solid $dark;
+    // position:sticky;
+    // top: 0;
+
+    border-bottom: 3px solid #3b3a3a;
+    position: sticky;
+    top: 31px;
+    width: 100%;
 }
 
 .window__header{

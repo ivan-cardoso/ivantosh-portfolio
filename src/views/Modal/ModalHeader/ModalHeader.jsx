@@ -11,7 +11,11 @@ const ModalHeader = ({handleClose, modalTitle}) => {
                 </button>
                 <button className={s.modal__header__btn} ></button>
             </div>
-            <h4 className={s.modal__header__title} >{modalTitle}</h4>
+            <div className={s.modal__header__title}>
+                <h4  >{modalTitle}</h4>
+            </div>
+            <div className={s.modal__header__controls}>
+            </div>
         </div>
     )
 }
