@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import { useHistory } from "react-router";
 
 const useModal = () =>{
@@ -49,6 +49,32 @@ const useModal = () =>{
         }
     }
 
+    const [welcomeModal, setWelcomeModal] = useState(()=>{
+        const local = window.sessionStorage.getItem("welcome")
+        console.log("LOCAL", local)
+        return local === "false" ? local : "true"
+        // JSON.parse(window.localStorage.getItem("cartItems")) || []
+    })
+    
+    const handleCloseWelcome = () =>{
+        setWelcomeModal("false")
+
+        // const myStorage = window.localStorage 
+        
+        // myStorage.setItem("welcome", welcomeModal)
+    }
+
+    console.log("welcome", welcomeModal)
+    console.log("STORAGE", window.sessionStorage.getItem("welcome"))
+
+    useEffect(()=> {
+        const myStorage = window.sessionStorage 
+        myStorage.setItem("welcome", welcomeModal)
+        // window.localStorage.setItem("welcome", JSON.stringify(welcomeModal))
+    },[welcomeModal])
+
+    
+
     return ({
         show,
         modalTitle,
@@ -58,7 +84,9 @@ const useModal = () =>{
         handleLinkMobile,
         handleLink,
         handlePdf,
-        handlePdfMobile
+        handlePdfMobile,
+        welcomeModal,
+        handleCloseWelcome
     })
 }
 

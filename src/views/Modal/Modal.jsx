@@ -44,7 +44,11 @@ const Modal = ({ handleClose, modalTitle, singleProject, height, width }) => {
             <div className={s.modal__container} id="modal__container">
                 <ModalHeader handleClose={handleClose} modalTitle={modalTitle} />
                 <div className={s.modal__body}>
-                    <ModalBody section={modalTitle} singleProject={singleProject} />
+                    <ModalBody 
+                        section={modalTitle} 
+                        singleProject={singleProject} 
+                        handleClose={handleClose}
+                    />
                 </div>
             </div>
         </div>

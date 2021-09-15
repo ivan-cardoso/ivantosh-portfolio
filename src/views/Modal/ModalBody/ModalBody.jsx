@@ -7,10 +7,11 @@ import TechnologiesSection from '../ModalSections/TechnologiesSection/Technologi
 import DownloadSection from '../ModalSections/DownloadSection/DownloadSection'
 import GoalsSection from '../ModalSections/GoalsSection/GoalsSection'
 import ContactSection from '../ModalSections/ContactSection/ContactSection'
+import WelcomeSection from '../ModalSections/WelcomeSection/WelcomeSection'
 
 import SingleProject from "../../Projects/SingleProjects/SingleProject"
 
-const ModalBody = ({section, singleProject}) => {
+const ModalBody = ({section, singleProject, handleClose}) => {
 
     console.log("SECTION", section)
     const CurrentSection = () =>{
@@ -24,6 +25,8 @@ const ModalBody = ({section, singleProject}) => {
         if(section === "Contact_Me") return <ContactSection/> 
         
         if(section === "contact_message") return <ContactSection/> 
+
+        if(section === "welcome") return <WelcomeSection handleClose={handleClose} /> 
         
         if(singleProject) return <SingleProject section={section} />
 

@@ -37,8 +37,18 @@ const Home = () => {
         handleLink,
         handleLinkMobile,
         handlePdf,
-        handlePdfMobile
+        handlePdfMobile,
+        welcomeModal, 
+        handleCloseWelcome
     } = useModal()
+
+    useEffect(() => {
+        return () => {
+            handleCloseWelcome()
+        }
+    }, [welcomeModal])
+
+    
 
     return (
         <div className={s.home__section}>
@@ -85,6 +95,8 @@ const Home = () => {
                     />
                 </div>
                 {show && <Modal handleClose={handleClose} modalTitle={modalTitle} />}
+
+                {welcomeModal === "true" ? <Modal handleClose={handleCloseWelcome} modalTitle={"welcome"}  /> : <></>}
             </div>
         </div>
 
