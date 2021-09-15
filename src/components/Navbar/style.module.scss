@@ -1,8 +1,31 @@
+@import "../../assets/scss/colors.scss";
 .navbar__container{
     height: 1.7rem;
-    background-color: #d32626;
-    position: fixed;
+    background-color: #3b3a3a;
+    position: sticky;
     top: 0;
     width: 100%;
     margin: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        text-decoration: none;
+    }
+}
+
+.navbar__text{
+    margin: 0;
+    color: #5f5e5e7c;
+    font-weight: 500;
+    color: white;
+    font-size: .9rem;
+}
+
+.navbar__icon__container{
+    display: flex;
+    svg{
+        margin-right:.4rem;
+    }
 }

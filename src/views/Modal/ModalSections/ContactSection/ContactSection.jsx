@@ -7,7 +7,6 @@ import {Link} from "react-router-dom"
 
 const ContactSection = () => {
     return (
-        // <div className={me.me__section}>
             <div className={s.contact__message}>
                 <h1 className={s.modal__title}>¡Gracias!</h1>
                 <div className={s.contact__text} >
@@ -26,8 +25,6 @@ const ContactSection = () => {
 
                 </div>
             </div>
-
-        // </div>
     )
 }
 

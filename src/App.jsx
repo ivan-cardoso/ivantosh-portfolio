@@ -11,7 +11,7 @@ import ModalProvider from "./context/modalContext"
 function App() {
   return (
     <>
-      {/* <NavBar/> */}
+      <NavBar/>
       <ModalProvider>
         <Switch>
           <Route exact path={"/"} component={Home} />
