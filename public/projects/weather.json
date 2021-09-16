@@ -1,26 +1,23 @@
 {
     "title" : "El Clima Now",
     "about" : [
-        "Ecommerce de Productos Tecnológicos.",
-        "Proyecto Grupal - Coding Bootcamp.",
-        "Se uso la metodología SCRUM para el trabajo en equipo."
+        "Plataforma para conocer el clima en tiempo real de cualquier ciudad del mundo"
     ],
-    "portrait" : "https://i.imgur.com/z4U3uVs.png",
+    "portrait" : "https://i.imgur.com/i6ltSwr.png",
     "features" : [
-        "Encontrar camperas, camisas, cámaras y vinilos",
-        "Acceder a los productos mediante categorías",
-        "Persistencia de los productos del carrito usando el Local Storage",
-        "Adaptado a dispositivos móviles"
+        "Conocer la temperatura actual, mínima y máxima.",
+        "Ver el clima de los siguientes cuatro días.",
+        "Buscar por país, ciudad, código postal.",
+        "Adaptado a dispositivos móviles."
     ],
-    "frontend" : ["React Js", "React Context", "React Bootstrap", "Scss"],
-    "backend" : ["Firebase"],
-    "methodology" : ["SCRUM"],
+    "frontend" : ["Vanilla JavaScript", "Bootstrap", "Scss"],
+    "backend" : null,
+    "methodology" : null,
     "images" : [
-        "https://i.imgur.com/DYYFBBa.png",
-        "https://i.imgur.com/QNAUOng.png",
-        "https://i.imgur.com/i7Op6rK.png",
-        "https://i.imgur.com/XtOOX8V.png"
+        "https://i.imgur.com/W1dhI2G.png",
+        "https://i.imgur.com/mRMIOtp.png",
+        "https://i.imgur.com/xUg0gDF.png"
     ],
-    "github" : "https://github.com/ivan-cardoso/vintage-vibes",
-    "demo" : "https://vintage-vibes.netlify.app/"
+    "github" : null,
+    "demo" : "https://elclimanow.web.app/"
 }
