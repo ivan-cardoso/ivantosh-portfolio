@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../../../../components/Button/Button'
+import { Link } from "react-router-dom"
 import s from "../style.module.scss"
 
 const GoalsSection = () => {
@@ -20,7 +21,9 @@ const GoalsSection = () => {
                     </p>
                 </div>
                 <div className={s.btn__container} >
-                    <Button text={"Contacto"} />
+                    <Link to={"/contact"} >
+                        <Button text={"Contacto"} />
+                    </Link>
                     <a href="CV-Ivan Cardoso.pdf" download >
                         <Button text={"CV"} />
                     </a>

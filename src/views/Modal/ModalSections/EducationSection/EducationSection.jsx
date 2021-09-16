@@ -16,7 +16,7 @@ const EducarionSection = () => {
         return (
             <div>
                 <div className={me.me__section}>
-                    <h1 className={s.modal__title}>My Education</h1>
+                    <h1 className={s.modal__title}>Mi Educación</h1>
                     {data ? 
 
                         data.map((e)=>{

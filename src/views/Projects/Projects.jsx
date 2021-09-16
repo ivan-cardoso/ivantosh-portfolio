@@ -22,13 +22,13 @@ import IconHome from '../../components/IconHome/IconHome'
 import Modal from '../Modal/Modal'
 import useModal from "../../hooks/useModal"
 
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import WindowHeader from './WindowHeader'
 
 
 const Projects = ({ windowTitle }) => {
 
-    const {show, modalTitle, handleShow, handleShowDesktop, handleShowMobile, handleClose} = useModal()
+    const { show, modalTitle, handleShow, handleShowDesktop, handleShowMobile, handleClose } = useModal()
 
     return (
         <>
@@ -39,53 +39,30 @@ const Projects = ({ windowTitle }) => {
                 <div className={s.window__body__container}>
                     <div className={s.window__body__sidebar} >
                         <ul className={s.window__sidebar__list} >
-                            <li><ListDecoration/><p>Me</p></li>
+                            <li><ListDecoration /><p>Me</p></li>
 
                             <li>
-                                <ListDecoration/>
+                                <ListDecoration />
                                 <p className={s.window__sidebar__active}>Projects</p>
                                 <ul className={s.window__sidebar__projects} >
-                                    <li><ListDecoration/> <p>Vintage Vibes</p></li>
-                                    <li><ListDecoration/> <p>Bumeran Selecta</p></li>
-                                    <li><ListDecoration/> <p>Branch&Gamer</p></li>
-                                    <li><ListDecoration/> <p>Quentin IMDB</p></li>
-                                    <li><ListDecoration/> <p>Weather</p></li>
+                                    <li><ListDecoration /> <p>Vintage Vibes</p></li>
+                                    <li><ListDecoration /> <p>Bumeran Selecta</p></li>
+                                    <li><ListDecoration /> <p>Branch&Gamer</p></li>
+                                    <li><ListDecoration /> <p>Quentin IMDB</p></li>
+                                    <li><ListDecoration /> <p>Weather</p></li>
                                 </ul>
                             </li>
-                            <li><ListDecoration/><p>Education</p></li>
-                            <li><ListDecoration/><p>Technologies</p></li>
-                            <li><ListDecoration/><p>Goals</p></li>
+                            <li><ListDecoration /><p>Education</p></li>
+                            <li><ListDecoration /><p>Technologies</p></li>
+                            <li><ListDecoration /><p>Goals</p></li>
                         </ul>
                     </div>
 
                     <div className={s.window__body__files}>
-                        <div className={s.window__icon__files__container} >
-                            <IconHome Icon={Weather} 
-                                title={"Weather"} 
-                                handleShowDesktop={handleShowDesktop}
-                                handleShowMobile={handleShowMobile}/>
-                        </div>
-
                         <div className={s.window__icon__files__container}>
-                            <IconHome 
-                                Icon={Branch} 
-                                title={"Ecommerce"}
-                                handleShowDesktop={handleShowDesktop}
-                                handleShowMobile={handleShowMobile}
-                            />
-                        </div>
-                        <div className={s.window__icon__files__container}>
-                            <IconHome 
+                            <IconHome
                                 Icon={Vintage}
                                 title={"Vintage Vibes"}
-                                handleShowDesktop={handleShowDesktop}
-                                handleShowMobile={handleShowMobile}
-                            />
-                        </div>
-                        <div className={s.window__icon__files__container}>
-                            <IconHome 
-                                Icon={Omdb} 
-                                title={"Quentin IMDB"}
                                 handleShowDesktop={handleShowDesktop}
                                 handleShowMobile={handleShowMobile}
                             />
@@ -98,13 +75,40 @@ const Projects = ({ windowTitle }) => {
                                 handleShowMobile={handleShowMobile}
                             />
                         </div>
+                        
+
+                        <div className={s.window__icon__files__container}>
+                            <IconHome
+                                Icon={Branch}
+                                title={"Ecommerce"}
+                                handleShowDesktop={handleShowDesktop}
+                                handleShowMobile={handleShowMobile}
+                            />
+                        </div>
+
+                        <div className={s.window__icon__files__container}>
+                            <IconHome
+                                Icon={Omdb}
+                                title={"Quentin IMDB"}
+                                handleShowDesktop={handleShowDesktop}
+                                handleShowMobile={handleShowMobile}
+                            />
+                        </div>
+
+                        <div className={s.window__icon__files__container} >
+                            <IconHome Icon={Weather}
+                                title={"Weather"}
+                                handleShowDesktop={handleShowDesktop}
+                                handleShowMobile={handleShowMobile} />
+                        </div>
+
                     </div>
                 </div>
-                {show && <Modal 
-                            handleClose={handleClose}  
-                            modalTitle={modalTitle}
-                            singleProject={true} 
-                         />}
+                {show && <Modal
+                    handleClose={handleClose}
+                    modalTitle={modalTitle}
+                    singleProject={true}
+                />}
 
             </div>
         </>

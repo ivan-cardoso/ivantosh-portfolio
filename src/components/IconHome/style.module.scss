@@ -10,6 +10,7 @@
     padding:  .8rem;
     height: fit-content;
     cursor: pointer;
+    user-select: none;
 }
 .button__container:hover{
     background-color:#3b3a3a40;

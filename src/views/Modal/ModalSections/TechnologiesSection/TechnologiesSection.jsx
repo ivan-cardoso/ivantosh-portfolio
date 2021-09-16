@@ -12,7 +12,7 @@ const TechnologiesSection = () => {
     return (
         <div>
             <div className={me.me__section}>
-                <h1 className={s.modal__title}>My Technologies</h1>
+                <h1 className={s.modal__title}>Tecnologías</h1>
 
                 <div className={s.icon__technology__section}>
                     <div className={s.icon__technology__container}>
