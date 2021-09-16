@@ -1,0 +1,144 @@
+@import "../../../assets/scss/colors.scss";
+
+.modal__section{
+    padding: 2rem 2rem 0 2rem;
+}
+
+.modal__title{
+    text-align: center;
+    margin: 0;
+}
+.education__container{
+    border-bottom: 3px solid $dark;
+    padding-bottom: 1rem;
+}
+.title__background{
+    padding: 1rem;
+    background-color: $dark;
+    color: $secondary;
+    transition: all .2s linear ;
+    margin-top: 2rem;
+    h2{
+        margin: 0;
+        font-size: 1.7rem;
+    }
+}
+.title__background:hover{
+    color: $dark;
+    background-color: $secondary;
+    box-shadow: inset 0 0 0 3px $dark;
+}
+
+.title__h3{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.title__h5{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: rgb(75, 73, 73);
+    font-style: italic;
+}
+
+.modal__text__container__bg{
+    margin: 1rem 0 ;
+    background-color: $light;
+    padding: 1.2rem ;
+    border-radius: .3rem;
+    ul{
+        padding: .8rem;
+        margin: 0;
+    }
+}
+
+.modal__text{
+    margin: 0;
+    margin-bottom: .8rem;
+    font-size: 1.2rem;
+    color: $dark;
+}
+
+.icon__technology__section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2.3rem;
+}
+
+.icon__technology__container{
+    width: 8rem;
+    height: 7.5rem;
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 1rem 2rem;
+    border-radius: .3rem; 
+    cursor: pointer;
+}
+
+.icon__technology{
+    fill: $secondary;
+    font-size: 3rem;
+    max-width: 6rem;
+}
+
+.text__tech{
+    margin: 0;
+    font-size: 1.2rem;
+    color: $secondary;
+}
+
+.learning__technology__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon__technology__loader{
+    fill: $dark;
+    font-size: 3rem;
+    animation: loader 1.5s  infinite linear;
+}
+
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+.btn__container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.3rem;
+}
+
+.goals__section{
+    margin-top: 2rem;
+    justify-content: space-around;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.contact__message{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact__text{
+    text-align: center;
+}
+
+
+@media (min-width : 768px){
+    .goals__section{
+        margin-top: 0;
+    }
+}

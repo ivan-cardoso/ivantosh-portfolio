@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import s from "./style.module.scss"
-// import data from "./vintage.json"
 
 import Button from "../../../components/Button/Button"
-import {Link} from "react-router-dom"
 
 const VintageVibes = ({section}) => {
 
@@ -12,7 +10,12 @@ const VintageVibes = ({section}) => {
     const project = section.split(" ").join("_").toLowerCase()
 
     useEffect(() => {
-        fetch(`${project}.json`)
+        fetch(`/projects/${project}.json`, {
+            headers : { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+             }
+          })
         .then((res)=>res.json())
         .then((pro)=>{setData(pro)}) 
         .catch((err)=>console.log("ERROR", err) )
@@ -20,9 +23,8 @@ const VintageVibes = ({section}) => {
 
     return (
         <>
-            {data ? 
+            {data.title ? 
             <div className={s.single__project__container}>
-                {console.log(data)}
 
                 <header className={s.single__project__header} >
                     <h1>{data.title}</h1>
@@ -102,7 +104,7 @@ const VintageVibes = ({section}) => {
                     { data.images ? 
                         data.images.map((e)=>{
                             return(
-                                <img className={s.single__project__img} src={e}/>
+                                <img className={s.single__project__img} alt={data.title} src={e}/>
                             )
                         })    
                         : <></>
@@ -111,12 +113,12 @@ const VintageVibes = ({section}) => {
 
                 <div className={s.single__project__btn}>
                     {data.demo && 
-                        <a href={data.demo} target="_blank">
+                        <a href={data.demo} target="_blank" rel="noreferrer">
                             <Button text={"DEMO"} />
                         </a>
                     }
                     {data.github && 
-                        <a href={data.github} target="_blank">
+                        <a href={data.github} target="_blank" rel="noreferrer">
                             <Button text={"GITHUB"} />
                         </a>
                     }

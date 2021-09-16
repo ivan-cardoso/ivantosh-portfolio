@@ -1,0 +1,51 @@
+@import "../../assets/scss/colors.scss";
+.navbar__container{
+    height: 1.9rem;
+    background-color: #3b3a3a;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        text-decoration: none;
+    }
+}
+
+.navbar__icon__container{
+    display: flex;
+    align-items: center;
+    svg{
+        margin-right:.4rem;
+    }
+}
+.navbar__text{
+    margin: 0;
+    color: #5f5e5e7c;
+    font-weight: 500;
+    color: white;
+    font-size: .8rem;
+}
+
+.navbar__fullscreen{
+    display: none;
+}
+
+
+@media (min-width : 768px){
+    .navbar__text{
+        font-size: .9rem;
+    }
+    .navbar__fullscreen{
+        display: block;
+        position: absolute;
+        right: 2rem;
+        svg{
+            cursor: pointer;
+            color: white;
+        }
+    }
+}

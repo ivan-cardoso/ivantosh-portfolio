@@ -1,0 +1,72 @@
+[
+    {
+        "title" : "Coding Bootcamp",
+        "place" : "Plataforma 5",
+        "duration" : "2021",
+        "description" : [
+            "Programa intensivo fulltime especializado en Javascript para el desarrollo front-end y back-end de aplicaciones web.",
+            "Más 800 horas de duración en 15 semanas.",
+            "Uso de la metodología Scrum para el trabajo en equipo y PairProgramming como dinámica de aprendizaje.",
+            "Pude poner a prueba y fortalecer habilidades como el trabajo en equipo, el rápido aprendizaje, la escucha activa y la adaptación a constantes cambios."
+        ],
+        "technologies" : [
+            "React",
+            "React Router",
+            "Redux",
+            "Node",
+            "Express",
+            "Sequelize",
+            "PostgreSQL",
+            "Passport",
+            "Socket.io",
+            "SCRUM (metodología ágil)",
+            "GIT (Control de versiones)"
+        ],
+        "projects" : [
+            {
+                "name" : "Bumeran Selecta - Navent",
+                "dinamic" : "Proyecto Profesional Grupal",
+                "description" : "Plataforma para agilizar el proceso de asignación de reclutadores a las búsquedas de talento de las empresas."
+            },
+            {
+                "name" : "Branch&Gamer Ecommerce",
+                "dinamic" : "Proyecto Grupal",
+                "description" : "Comercio electrónico de productos tecnológicos.."
+            },
+            {
+                "name" : "Quentin",
+                "dinamic" : "Proyecto Individual",
+                "description" : "Aplicación web para buscar información sobre series y películas, consumiendo la API de IMDB."
+            }
+        ]
+    },
+    {
+        "title" : "Carrera Front End",
+        "place" : "Coderhouse",
+        "duration" : "2020 - 2021",
+        "description" : [
+            "Capacitación part-time en las bases del desarrollo web FrontEnd."
+        ],
+        "technologies" : [
+            "HTML-CSS", 
+            "JavaScript",
+            "Bootstrap",
+            "React",
+            "Firebase", 
+            "Node", 
+            "Git"
+        ],
+        "projects" : []
+    },
+    {
+        "title" : "Tecnicatura en Análisis de Sistemas",
+        "place" : "Instituto Superior de Informática Virasoro - San Pedro",
+        "duration" : "2019 - actualidad",
+        "description" : [
+            "Formación para comprender las estructuras de la programación, diagnosticar las necesidades del usuario y diseñar nuevos sistemas."
+        ],
+        "technologies" : null,
+        "projects" : null
+    }
+    
+]

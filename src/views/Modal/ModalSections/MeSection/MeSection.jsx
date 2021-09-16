@@ -1,7 +1,7 @@
 import React from 'react'
 import profile from "../../../../utils/p1.jpg"
 import Button from "../../../../components/Button/Button"
-
+import {Link } from "react-router-dom"
 import s from "./style.module.scss"
 
 const MeSection = () => {
@@ -32,8 +32,12 @@ const MeSection = () => {
                 </div>
             </div>
             <div className={s.btn__container}>
-                <Button text={"Projects"} />
-                <Button text={"Technologies"} />
+                <Link to={"/projects"} >
+                    <Button text={"Proyectos"} />
+                </Link>
+                <a href="CV-Ivan Cardoso.pdf" download >
+                    <Button text={"CV"} />
+                </a>
             </div>
         </div>
     )

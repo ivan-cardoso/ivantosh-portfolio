@@ -20,8 +20,10 @@
     "backend" : ["Node", "Express", "Sequelize", "PostgreSQL", "Passport"],
     "methodology" : ["SCRUM"],
     "images" : [
-        "https://i.imgur.com/WDPYr8r.png",
-        "https://i.imgur.com/OzYopQy.png"    
+        "https://i.imgur.com/WDPYr8r.png)",
+        "https://i.imgur.com/gxQH9Za.png)",
+        "https://i.imgur.com/J8ChkQX.png)",
+        "https://i.imgur.com/FEKtC2D.png)" 
     ],
     "github" : "https://github.com/ivan-cardoso/Quentin-OMDB"
 }

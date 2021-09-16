@@ -1,15 +1,17 @@
 @import "../../assets/scss/colors.scss";
 
-.home {
-    background-color: $primary;
+.home__section{
+    background-image: url("../../utils/background.svg");
+    background-position: center;
+    background-size: cover;
 }
+
 .home__container{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
     padding:0 2.3rem;
-    height: 100vh;
-    background-color: $primary;
+    height: 95vh;
 }
 
 .double__icon__row{

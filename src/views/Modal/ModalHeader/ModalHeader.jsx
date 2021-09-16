@@ -1,6 +1,6 @@
 import React from 'react'
-import {ReactComponent as  Xicon} from "../../utils/x.svg"
-import s from "./style.module.scss"
+import {ReactComponent as  Xicon} from "../../../utils/x.svg"
+import s from ".././style.module.scss"
 
 const ModalHeader = ({handleClose, modalTitle}) => {
     return (
@@ -11,7 +11,11 @@ const ModalHeader = ({handleClose, modalTitle}) => {
                 </button>
                 <button className={s.modal__header__btn} ></button>
             </div>
-            <h4 className={s.modal__header__title} >{modalTitle}</h4>
+            <div className={s.modal__header__title}>
+                <h4  >{modalTitle}</h4>
+            </div>
+            <div className={s.modal__header__controls}>
+            </div>
         </div>
     )
 }

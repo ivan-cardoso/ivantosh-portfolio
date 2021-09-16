@@ -1,6 +1,5 @@
 import React from 'react'
 import s from "./style.module.scss"
-import useModal from "../../hooks/useModal"
 
 const IconHome = ({ title, Icon, handleShowMobile, handleShowDesktop}) => {
 
