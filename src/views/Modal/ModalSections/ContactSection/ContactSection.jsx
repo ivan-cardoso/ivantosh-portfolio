@@ -1,6 +1,5 @@
 import React from 'react'
 import s from "../style.module.scss"
-import me from "../MeSection/style.module.scss"
 import Button from '../../../../components/Button/Button'
 
 import {Link} from "react-router-dom"

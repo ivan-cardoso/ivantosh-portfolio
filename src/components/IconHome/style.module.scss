@@ -14,15 +14,11 @@
 }
 .button__container:hover{
     background-color:#3b3a3a40;
-    // .icon__svg{
-    //     fill: $secondary;
-    // }
 }
 
 .icon__container{
     min-width: 4rem;
     min-height: 5rem;
-    // height: 4rem;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -30,8 +26,6 @@
 
 .icon__svg{
     color: $dark;
-    // stroke: $dark;
-    // background-size: red;
     width: 100%;
     height: auto;
     max-height: 5.2rem;
@@ -39,15 +33,11 @@
 
 .button__container:focus{
     background-color: #3b3a3a40;
-    // .icon__svg{
-    //     fill: $secondary;
-    // }
 }
 
 .icon__title{
     margin: 0;
     font-weight: 500;
     font-family: system-ui;
-    // font-family: monospace;
     color: black;
 }

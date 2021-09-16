@@ -35,9 +35,6 @@ const MeSection = () => {
                 <Link to={"/projects"} >
                     <Button text={"Proyectos"} />
                 </Link>
-                {/* <Link to={"/contact"} >
-                    <Button text={"Proyectos"} />
-                </Link> */}
                 <a href="CV-Ivan Cardoso.pdf" download >
                     <Button text={"CV"} />
                 </a>

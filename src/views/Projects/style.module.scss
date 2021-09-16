@@ -1,14 +1,10 @@
 @import "../../assets/scss/colors.scss"; 
 
 .window__container{
-    // background-color: $light;
     background-color: white;
     height: 100vh;
 }
 .window__header__container{
-    // border-bottom: 3px solid $dark;
-    // position:sticky;
-    // top: 0;
 
     border-bottom: 3px solid #3b3a3a;
     position: sticky;
@@ -20,7 +16,6 @@
     display: flex;
     align-items: center;
     height: 3rem;
-    // border-radius: .9rem  .9rem 0 0;
     overflow: hidden;
     background-color: white;
 }
@@ -69,7 +64,6 @@ svg:not(:root) {
 }
 
 .window__header__icons{
-    // background-color: $secondary;
     background-color: white;
     display: flex;
     padding: 0 0 .5rem;
@@ -84,7 +78,6 @@ svg:not(:root) {
     height: 2rem;
     border-radius: .3rem;
     background-color: $secondary;
-    // background-color: white;
     border: 3px solid #3b3a3a;
     font-weight: bold;
     font-family: cursive;
@@ -137,7 +130,6 @@ svg:not(:root) {
 
 .window__icon__files__container{
     height: fit-content;
-    // min-width: 8rem;
     min-height: 8rem;
     display: flex;
     justify-content: center;
@@ -168,7 +160,6 @@ svg:not(:root) {
             flex-flow:wrap ;
         }
         li:hover{
-            // background-color: $light;
         }
         p{
             color: #7b7b7b;

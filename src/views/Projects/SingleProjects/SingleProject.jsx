@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import s from "./style.module.scss"
-// import data from "./vintage.json"
 
 import Button from "../../../components/Button/Button"
-import {Link} from "react-router-dom"
 
 const VintageVibes = ({section}) => {
 
@@ -106,7 +104,7 @@ const VintageVibes = ({section}) => {
                     { data.images ? 
                         data.images.map((e)=>{
                             return(
-                                <img className={s.single__project__img} src={e}/>
+                                <img className={s.single__project__img} alt={data.title} src={e}/>
                             )
                         })    
                         : <></>
@@ -115,12 +113,12 @@ const VintageVibes = ({section}) => {
 
                 <div className={s.single__project__btn}>
                     {data.demo && 
-                        <a href={data.demo} target="_blank">
+                        <a href={data.demo} target="_blank" rel="noreferrer">
                             <Button text={"DEMO"} />
                         </a>
                     }
                     {data.github && 
-                        <a href={data.github} target="_blank">
+                        <a href={data.github} target="_blank" rel="noreferrer">
                             <Button text={"GITHUB"} />
                         </a>
                     }

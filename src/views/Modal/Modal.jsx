@@ -1,14 +1,10 @@
 import React, { useEffect } from 'react'
 import s from "./style.module.scss"
-import useModal from "../../hooks/useModal"
-import { ReactComponent as Xicon } from "../../utils/x.svg"
 import ModalBody from './ModalBody/ModalBody'
 import ModalHeader from "./ModalHeader/ModalHeader"
 
 
 const Modal = ({ handleClose, modalTitle, singleProject, height, width }) => {
-
-    const { show, handleShow } = useModal()
 
 
     useEffect(() => {
@@ -23,14 +19,10 @@ const Modal = ({ handleClose, modalTitle, singleProject, height, width }) => {
 
     const section = document.querySelector("#modal__section");
     document.addEventListener('click', function (event) {
-        console.log(event.target.id)
         if(event.target.id === "modal__section"){
             document.querySelector("#modal__container").animate([
-                // keyframes
                 { transform: 'translateX(2.5px)' },
-                // { transform: 'translateX(-5px)' }
               ], {
-                // timing options
                 delay: 0,
                 easing : "ease",
                 duration: 150,

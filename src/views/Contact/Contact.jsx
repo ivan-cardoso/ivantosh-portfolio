@@ -6,14 +6,12 @@ import s from "./style.module.scss"
 import emailjs from "emailjs-com"
 import Modal from '../Modal/Modal'
 import useModal from '../../hooks/useModal'
-import { useModalContext } from '../../context/modalContext'
 
 const Contact = () => {
 
     const {
         show,
         modalTitle,
-        handleShow,
         handleClose,
         handleShowMobile,
         handleShowDesktop
@@ -28,16 +26,10 @@ const Contact = () => {
             handleShowMobile("contact_message")
             handleShowDesktop()
             e.target.reset()
-            // return handleShow(true)
         })
         .catch((error) => {
             console.log(error.text);
         })
-    }
-
-    const prueba = (e) =>{
-        e.preventDefault()
-        handleShowMobile("contact_message")
     }
 
 

@@ -8,7 +8,6 @@ import { ReactComponent as IvanExplorer } from "../../../../utils/ivanExplorer.s
 import { GoLightBulb, GoRocket } from "react-icons/go"
 
 import useFullScreen from "../../../../hooks/useFullScreen"
-import useModal from '../../../../hooks/useModal'
 
 
 const WelcomeSection = ({handleClose}) => {
@@ -38,7 +37,6 @@ const WelcomeSection = ({handleClose}) => {
                 </p>
                 <p className={me.welcome__content__text}>
                     <GoRocket/> <b>RECOMENDACIÓN</b>. Para tener una mejor experiencia entrar en <b>Pantalla Completa </b> 
-                    {/* (<b>F11</b> en Windows) - (<b>^ + Cmd + F</b> en Mac)  */}
                 </p>
             
             </div>

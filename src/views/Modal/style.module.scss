@@ -23,7 +23,6 @@
 
 .modal__header{
     display: flex;
-    // background-color: red;
     align-items: center;
     height: 3rem;
     border-radius: .9rem  .9rem 0 0;
@@ -34,8 +33,6 @@
 .modal__header__controls{
     display: flex;
     justify-content: space-evenly;
-    // align-items: center;
-    // background-color: red;
     width: 6rem;
     z-index: 5;
 }
@@ -75,12 +72,10 @@ svg:not(:root) {
     justify-content: center;
     display: flex;
     width: 85%;
-    // position: absolute;
     z-index: 1;
 }
 
 .modal__body{
-    // height: inherit;
     height: 80%;
     border-radius: 0 0 1rem 1rem;
     overflow: scroll;
@@ -109,14 +104,12 @@ svg:not(:root) {
     .modal__body{
         overflow-x: hidden; /* Hide horizontal scrollbar */
         overflow-y: auto; /* Hide horizontal scrollbar */
-        // height: 91%;
         padding: 2rem 2rem 0 2rem;
 
 
         
         display: flex;
         flex-direction: column;
-        // align-items: center;
     }
     
 }

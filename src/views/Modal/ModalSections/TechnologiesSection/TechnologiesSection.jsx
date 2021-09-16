@@ -4,7 +4,6 @@ import me from ".././MeSection/style.module.scss"
 
 import { FaReact, FaSass, FaBootstrap, FaNodeJs, FaDatabase, FaGithub } from "react-icons/fa";
 import { SiJavascript, SiRedux, SiHtml5, SiCss3, SiPostgresql, SiJsonwebtokens, SiMaterialUi } from "react-icons/si"
-import { BiLoaderAlt } from "react-icons/bi"
 import Button from '../../../../components/Button/Button';
 import { ReactComponent as Express } from "../../../../utils/expressjs.svg"
 import { Link } from 'react-router-dom';
