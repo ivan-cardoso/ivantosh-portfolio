@@ -1,6 +1,23 @@
+import React, { useState } from "react"
+
 const useFullScreen = () =>{
+    const [isFull, setIsFull] = useState(false)
     const root = document.getElementById("root")
-    return root.requestFullscreen()
+
+    const handleFullScreen = () => {
+        if(isFull){
+            document.exitFullscreen()
+            .then(()=>setIsFull(false))
+            .catch((err)=> console.log(err))
+        }else{
+            root.requestFullscreen()
+            .then(()=>setIsFull(true))
+            .catch((err)=> console.log(err))
+        }
+        console.log("IS FULL", isFull)
+    }
+
+    return ({handleFullScreen})
 }
 
 export default useFullScreen

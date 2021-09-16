@@ -12,17 +12,13 @@ import useModal from '../../../../hooks/useModal'
 
 
 const WelcomeSection = ({handleClose}) => {
-    
-    // const {
-    //     welcomeModal, 
-    //     handleCloseWelcome
-    // } = useModal()
+
+    const {handleFullScreen} = useFullScreen()
     
     return (
         <div className={me.welcome__section}>
         <div className={me.welcome__container} >
             <div className={me.welcome__svg__container}>
-                {/* <img src={profile} alt="Ivan Cardoso" /> */}
                 <IvanExplorer/>
             </div>
 
@@ -48,7 +44,7 @@ const WelcomeSection = ({handleClose}) => {
             </div>
         </div>
         <div className={me.btn__container}>
-            <div onClick={useFullScreen}>
+            <div onClick={handleFullScreen}>
                 <Button text={"Pantalla Completa"}  />
             </div>
             <div onClick={handleClose}>

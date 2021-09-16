@@ -1,12 +1,16 @@
 import React from 'react'
+
+import useFullScreen from "../../hooks/useFullScreen"
 import s from "./style.module.scss"
 
 import {FaLinkedin, FaGithub} from "react-icons/fa"
+import { BsArrowsFullscreen } from "react-icons/bs"
 
 const Navbar = () => {
 
     const date = new Date()
     const formatDate = date.toDateString().split(" ")
+    const {handleFullScreen} = useFullScreen()
 
     return (
         <div className={s.navbar__container} >
@@ -25,6 +29,9 @@ const Navbar = () => {
                     <p className={s.navbar__text} >ivan--cardoso</p>
                 </div>
             </a>
+            <div className={s.navbar__fullscreen} onClick={handleFullScreen} >
+                <BsArrowsFullscreen/>
+            </div>
         </div>
     )
 }
