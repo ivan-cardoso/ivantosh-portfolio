@@ -14,7 +14,6 @@ const useFullScreen = () =>{
             .then(()=>setIsFull(true))
             .catch((err)=> console.log(err))
         }
-        console.log("IS FULL", isFull)
     }
 
     return ({handleFullScreen})
