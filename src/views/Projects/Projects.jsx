@@ -45,11 +45,11 @@ const Projects = ({ windowTitle }) => {
                                 <ListDecoration/>
                                 <p className={s.window__sidebar__active}>Projects</p>
                                 <ul className={s.window__sidebar__projects} >
-                                    <li><ListDecoration/> <p>Weather</p></li>
-                                    <li><ListDecoration/> <p>Branch&Gamer</p></li>
                                     <li><ListDecoration/> <p>Vintage Vibes</p></li>
-                                    <li><ListDecoration/> <p>Quentin IMDB</p></li>
                                     <li><ListDecoration/> <p>Bumeran Selecta</p></li>
+                                    <li><ListDecoration/> <p>Branch&Gamer</p></li>
+                                    <li><ListDecoration/> <p>Quentin IMDB</p></li>
+                                    <li><ListDecoration/> <p>Weather</p></li>
                                 </ul>
                             </li>
                             <li><ListDecoration/><p>Education</p></li>
