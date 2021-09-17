@@ -73,8 +73,6 @@ const useModal = () =>{
         myStorage.setItem("alert", welcomeAlert)
     },[welcomeModal, welcomeAlert])
 
-    
-
     return ({
         show,
         modalTitle,
