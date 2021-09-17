@@ -23,7 +23,7 @@ const WelcomeSection = ({handleClose}) => {
 
             <div className={me.me__content__container} >
                 <h2 className={me.content__title}>WELCOME TO IVANTOSH</h2>
-                <h3 className={me.welcome__subtitle} >Yo soy IVÁN CARDOSO - FULLSTACK DEVELOPER </h3>
+                <h3 className={me.welcome__subtitle} >Soy IVÁN CARDOSO - FULLSTACK DEVELOPER </h3>
                 <h3 className={me.welcome__subtitle} >Este es mi Sistema Operativo</h3>
                 
                 
