@@ -23,7 +23,7 @@ const WelcomeSection = ({handleClose}) => {
 
             <div className={me.me__content__container} >
                 <h2 className={me.content__title}>WELCOME TO IVANTOSH</h2>
-                <h3 className={me.welcome__subtitle} >Yo soy IVÁN CARDOSO - FULLSTACK DEVELOPER </h3>
+                <h3 className={me.welcome__subtitle} >Soy IVÁN CARDOSO - FULLSTACK DEVELOPER </h3>
                 <h3 className={me.welcome__subtitle} >Este es mi Sistema Operativo</h3>
                 
                 
@@ -32,9 +32,9 @@ const WelcomeSection = ({handleClose}) => {
                     <b> proyectos</b> que he realizado y los medios para <b>contactarme.</b> 
                 </p>
 
-                <p className={me.welcome__content__text}>
+                {/* <p className={me.welcome__content__text}>
                     <GoLightBulb/> <b>RECUERDA</b>. Si estas en Desktop, para ingresar en las secciones deberás hacer <b>doble click</b> sobre los íconos. 
-                </p>
+                </p> */}
                 <p className={me.welcome__content__text}>
                     <GoRocket/> <b>RECOMENDACIÓN</b>. Para tener una mejor experiencia entrar en <b>Pantalla Completa </b> 
                 </p>

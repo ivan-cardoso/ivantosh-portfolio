@@ -11,6 +11,8 @@ import { FaReact } from "react-icons/fa";
 import { GoLightBulb } from "react-icons/go"
 import { RiChatSmile3Line } from "react-icons/ri"
 
+import Alert from "../../components/Navbar/Alert"
+
 import useModal from "../../hooks/useModal"
 
 const Home = () => {
@@ -26,7 +28,9 @@ const Home = () => {
         handlePdf,
         handlePdfMobile,
         welcomeModal,
-        handleCloseWelcome
+        handleCloseWelcome,
+        welcomeAlert,
+        handleAlert
     } = useModal()
 
 
@@ -76,6 +80,9 @@ const Home = () => {
                 {show && <Modal handleClose={handleClose} modalTitle={modalTitle} />}
 
                 {welcomeModal === "true" ? <Modal handleClose={handleCloseWelcome} modalTitle={"welcome"} /> : <></>}
+                <div className={s.home__alert__container} >
+                    {welcomeModal === "false" && welcomeAlert === "true" ? <Alert handleAlert={handleAlert} /> : <></>}
+                </div>
             </div>
         </div>
 

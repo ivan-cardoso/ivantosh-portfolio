@@ -54,16 +54,24 @@ const useModal = () =>{
         return local === "false" ? local : "true"
     })
     
+    const [welcomeAlert, setWelcomeAlert] = useState(()=>{
+        const alert = window.sessionStorage.getItem("alert")
+        return alert === "false" ? alert : "true"
+    })
+
     const handleCloseWelcome = () =>{
         setWelcomeModal("false")
+    }
+
+    const handleAlert = () =>{
+        setWelcomeAlert("false")
     }
 
     useEffect(()=> {
         const myStorage = window.sessionStorage 
         myStorage.setItem("welcome", welcomeModal)
-    },[welcomeModal])
-
-    
+        myStorage.setItem("alert", welcomeAlert)
+    },[welcomeModal, welcomeAlert])
 
     return ({
         show,
@@ -76,7 +84,9 @@ const useModal = () =>{
         handlePdf,
         handlePdfMobile,
         welcomeModal,
-        handleCloseWelcome
+        handleCloseWelcome,
+        welcomeAlert,
+        handleAlert
     })
 }
 
