@@ -32,9 +32,9 @@ const WelcomeSection = ({handleClose}) => {
                     <b> proyectos</b> que he realizado y los medios para <b>contactarme.</b> 
                 </p>
 
-                <p className={me.welcome__content__text}>
+                {/* <p className={me.welcome__content__text}>
                     <GoLightBulb/> <b>RECUERDA</b>. Si estas en Desktop, para ingresar en las secciones deberás hacer <b>doble click</b> sobre los íconos. 
-                </p>
+                </p> */}
                 <p className={me.welcome__content__text}>
                     <GoRocket/> <b>RECOMENDACIÓN</b>. Para tener una mejor experiencia entrar en <b>Pantalla Completa </b> 
                 </p>

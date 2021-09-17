@@ -51,27 +51,27 @@ const useModal = () =>{
 
     const [welcomeModal, setWelcomeModal] = useState(()=>{
         const local = window.sessionStorage.getItem("welcome")
-        console.log("LOCAL", local)
         return local === "false" ? local : "true"
-        // JSON.parse(window.localStorage.getItem("cartItems")) || []
     })
     
+    const [welcomeAlert, setWelcomeAlert] = useState(()=>{
+        const alert = window.sessionStorage.getItem("alert")
+        return alert === "false" ? alert : "true"
+    })
+
     const handleCloseWelcome = () =>{
         setWelcomeModal("false")
-
-        // const myStorage = window.localStorage 
-        
-        // myStorage.setItem("welcome", welcomeModal)
     }
 
-    console.log("welcome", welcomeModal)
-    console.log("STORAGE", window.sessionStorage.getItem("welcome"))
+    const handleAlert = () =>{
+        setWelcomeAlert("false")
+    }
 
     useEffect(()=> {
         const myStorage = window.sessionStorage 
         myStorage.setItem("welcome", welcomeModal)
-        // window.localStorage.setItem("welcome", JSON.stringify(welcomeModal))
-    },[welcomeModal])
+        myStorage.setItem("alert", welcomeAlert)
+    },[welcomeModal, welcomeAlert])
 
     
 
@@ -86,7 +86,9 @@ const useModal = () =>{
         handlePdf,
         handlePdfMobile,
         welcomeModal,
-        handleCloseWelcome
+        handleCloseWelcome,
+        welcomeAlert,
+        handleAlert
     })
 }
 
